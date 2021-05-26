@@ -1,0 +1,6 @@
+1- crear el entorno con venv
+2- crear la variable de ambiente FLASK_APP=appname.py
+3- corroborar que exista echo $FLASK_APP, retorna 
+    el nombre del archivo que inicia flask, en este 
+    caso main.py
+4- correr la app con flask run     
