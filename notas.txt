@@ -4,3 +4,4 @@
     el nombre del archivo que inicia flask, en este 
     caso main.py
 4- correr la app con flask run     
+me quede en el video: https://platzi.com/clases/1540-flask/18445-request-y-response/
