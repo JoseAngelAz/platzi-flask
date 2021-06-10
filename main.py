@@ -16,9 +16,10 @@ def index():
     response = make_response(redirect('/hello'))
     session['user_ip'] = ip_user
     return response
+    
 @app.route('/hello')
 def hello():
-    user_ip = request.session.get('user_ip')
+    user_ip = session.get('user_ip')
     #cuando hay muchos parametros para pasar a la vista mejor pasarla como un contexto en un diccionario
     context = {
          'user_ip':user_ip,
