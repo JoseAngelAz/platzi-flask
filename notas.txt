@@ -1,7 +1,15 @@
-1- crear el entorno con venv
-2- crear la variable de ambiente FLASK_APP=appname.py
+1- crear el entorno con venv(source venv/bin/activate)
+2- crear la variable de ambiente export FLASK_APP=appname.py
 3- corroborar que exista echo $FLASK_APP, retorna 
     el nombre del archivo que inicia flask, en este 
     caso main.py
 4- correr la app con flask run     
 me quede en el video: https://platzi.com/clases/1540-flask/18445-request-y-response/
+5-activar depurador export FLASK_DEBUG=1
+
+me quede en video: https://platzi.com/clases/1540-flask/18453-flask-bootstrap/
+para correr los requirements(pip install -r requirements.txt)
+para bootstrap version mayor, no se si funciona(install_requires=['flask-bootstrap<3', 'another_package'])
+poner el servidor de desarrollo export FLASK_ENV=development
+para revisar las variables es con echo: asi (echo FLASK_ENV=development)
+ultimo video : https://platzi.com/clases/1540-flask/18455-implementacion-de-flask-bootstrap-y-flask-wtf/

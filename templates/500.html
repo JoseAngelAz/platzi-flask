@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+<!--ERROR 404-->
+{% block title %}
+{{super()}}
+No Encontrado 500
+{% endblock %}
+
+<!--Contenido-->
+{% block content%}
+<h1>Lo sentimos, no tienes permisos o no has iniciado sesion</h1>
+<p>{{error}}</p>
+{%endblock%}

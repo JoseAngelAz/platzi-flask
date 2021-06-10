@@ -1,0 +1,27 @@
+<!--Extender el tamplate base-->
+{% extends 'base.html' %}
+<!--importar macros-->
+{% import 'macros.html' as macros %}
+
+<!--Titulo-->
+{% block title %}
+    {{ super() }}
+    Bienvenido
+{% endblock %}
+
+<!--Block content   -->
+{% block content %}
+<!--user IP-->
+{% if user_ip %}
+<h1>El IP del usuario atravez de la cookie es: {{user_ip}}</h1>
+{% else %}
+<a href="{{url_for('index')}}">Ir al Inicio</a>
+{% endif %}
+
+<!--Lista TODO-->
+<ul>
+{% for todo in todos %}
+{{macros.render_todo(todo)}}
+{% endfor %}
+</ul>
+{% endblock %}

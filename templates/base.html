@@ -1,0 +1,17 @@
+{% extends 'bootstrap/base.html'%}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<title>
+    {% block title %}Flask Platzi| {% endblock %}
+</title>
+{% endblock %}
+
+{% block body %}    
+
+    {% block navbar%}
+    {% include 'navbar.html'%}        
+    {% endblock%}
+{% block content %}
+{% endblock %}
+
+{% endblock %}
